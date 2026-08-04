@@ -513,9 +513,10 @@ h1 {
   padding-left: 22px; position: relative;
 }
 .plan-list li::before {
-  content: ""; position: absolute; left: 0; top: 6px;
-  width: 11px; height: 11px; border-radius: 50%;
-  background: var(--paper); border: 2px solid var(--ink);
+  content: ""; position: absolute; left: 3px; top: 4px;
+  width: 6px; height: 11px;
+  border: solid var(--ink); border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 /* ─── FAQ ────────────────────────────────────────────────── */
