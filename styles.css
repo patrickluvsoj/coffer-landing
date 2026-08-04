@@ -642,12 +642,20 @@ h1 {
   .approve { transform: none; box-shadow: 5px 5px 0 var(--green); }
 
   .panel { padding: 20px 18px; border-radius: 20px; }
-  .note, .done { width: calc(50% - 5px); }
-  .note-b, .note-c, .note-d { width: calc(50% - 5px); }
-  .note-c { right: 0; }
-  .note-d { left: 0; }
-  .done-c { left: 0; }
-  .done-d { right: 0; }
+
+  /* Too narrow to scatter the cards around the figure without collisions:
+     flow them into a grid on top and reserve room for the figure below. */
+  .scene {
+    height: auto;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 8px; align-content: start;
+    padding-bottom: 262px;
+  }
+  .note, .done { position: static; width: auto; }
+  .note-a { transform: rotate(-2deg); }
+  .note-b { transform: rotate(2deg); }
+  .note-c { transform: rotate(-1.5deg); }
+  .note-d { transform: rotate(1.5deg); }
 
   .chips { grid-template-columns: 1fr; }
   .modules-head { margin-bottom: 40px; }
