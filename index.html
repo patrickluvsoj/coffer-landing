@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coffer — The AI back office for small service businesses</title>
+<meta name="description" content="Coffer chases your unpaid invoices, answers leads in seconds, and files every receipt — and shows you every action before it takes it. Built for service firms of 3–20.">
+<meta name="theme-color" content="#0d2018">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="You didn't start a business to chase invoices at 9pm.">
+<meta property="og:description" content="Coffer chases your unpaid invoices, answers leads in seconds, and files every receipt — and shows you every action before it takes it. Built for service firms of 3–20.">
+<meta property="og:site_name" content="Coffer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="You didn't start a business to chase invoices at 9pm.">
+<meta name="twitter:description" content="An AI teammate for the money side of your business. It drafts; you approve.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>
+// Hide reveal targets before first paint, but never leave them hidden:
+// if main.js does not report ready, drop the class and show everything.
+document.documentElement.classList.add('js');
+setTimeout(function () {
+  var d = document.documentElement;
+  if (!d.classList.contains('reveal-ready')) d.classList.remove('js');
+}, 1200);
+</script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Coffer home">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-name">Coffer</span>
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="#how-it-works">How it works</a>
+      <a href="#what-it-does">What it does</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+
+    <div class="nav-right">
+      <a class="btn btn-green btn-sm" href="#demo">Book a demo</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ─── Hero ─────────────────────────────────────────────── -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="reveal hero-copy">
+        <p class="eyebrow">For service businesses of 3–20</p>
+        <h1>You didn't start a business to chase invoices at <span class="hl">9pm.</span></h1>
+        <p class="lede">Coffer is an AI teammate for the money side of your business. It gets invoices out on time, follows up on the late ones, answers new leads in seconds, and files every receipt — and it shows you every message before it goes out.</p>
+        <div class="cta-row">
+          <a class="btn btn-green btn-lg" href="#demo">Book a 15-minute demo</a>
+          <a class="link-underline" href="#demo">Watch the 3-minute walkthrough →</a>
+        </div>
+        <p class="fine">Connects to QuickBooks or Xero in under 10 minutes. No new system to learn. Cancel anytime.</p>
+      </div>
+
+      <div class="reveal hero-shot">
+        <figure class="approve" aria-label="Product screenshot: an approval inbox showing a drafted follow-up text message">
+          <div class="approve-head"><span>Approve this text</span><span>1 waiting</span></div>
+          <div class="approve-body">
+            <div class="approve-who">
+              <span class="avatar" aria-hidden="true"></span>
+              <span>
+                <b>Dana R. · Northfield</b>
+                <small>Invoice 1042 · $10,400 · 31 days</small>
+              </span>
+            </div>
+            <div class="rule" aria-hidden="true"></div>
+            <p class="bubble them">Hey — thanks again for the spring cleanup, it looks great!</p>
+            <p class="bubble us">Thanks Dana! Quick one — invoice 1042 ($10,400) is at 31 days. Here's the payment link, PO 88-2210 attached. Want me to send it to AP instead?</p>
+            <p class="draft-tag">Draft · not sent yet</p>
+          </div>
+          <div class="approve-actions" aria-hidden="true">
+            <span class="act act-send">Send</span>
+            <span class="act">Edit</span>
+            <span class="act act-skip">Skip</span>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Trust bar ────────────────────────────────────────── -->
+  <div class="trustbar">
+    <div class="wrap trustbar-inner">
+      <p class="trustbar-label">Works with</p>
+      <ul class="trustbar-list">
+        <li>QuickBooks</li><li>Xero</li><li>Stripe</li><li>Gmail</li><li>Outlook</li><li>Google Calendar</li><li>Twilio</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── Before / after ───────────────────────────────────── -->
+  <section class="tuesday reveal">
+    <div class="wrap">
+      <h2 class="center">Same Tuesday. Different Tuesday.</h2>
+      <p class="section-sub center">Ana runs a four-person garden crew. Here's her last hour of the day, before Coffer and after.</p>
+
+      <div class="ba-grid">
+
+        <article class="panel panel-before">
+          <div class="panel-head">
+            <span class="panel-when">Before · 9:04 pm</span>
+            <span class="panel-note">still at the kitchen table</span>
+          </div>
+
+          <div class="scene" aria-hidden="true">
+            <div class="note note-a"><b>Invoice 1042</b><small>31 days late · $10,400</small></div>
+            <div class="note note-b"><b>Missed call 2:04pm</b><small>new lead, no reply</small></div>
+            <div class="note note-c"><b>37 receipts</b><small>uncategorized</small></div>
+            <div class="note note-d"><b>Invoice 1043</b><small>still not sent</small></div>
+
+            <div class="fig fig-slumped">
+              <i class="s-arm-r"></i><i class="s-torso"></i><i class="s-strap-l"></i><i class="s-strap-r"></i>
+              <i class="s-arm-l"></i><i class="s-head"></i><i class="s-hair"></i><i class="s-hair2"></i>
+              <i class="s-brow-l"></i><i class="s-brow-r"></i><i class="s-mouth"></i>
+              <i class="s-ear-l"></i><i class="s-ear-r"></i><i class="s-phone"></i>
+            </div>
+
+            <i class="tabletop"></i><i class="tableleg tableleg-l"></i><i class="tableleg tableleg-r"></i>
+            <i class="mug-body"></i><i class="mug-handle"></i>
+            <i class="pot"></i><i class="stem"></i><i class="leaf-a"></i><i class="leaf-b"></i>
+          </div>
+
+          <p class="panel-foot">Fourteen things open. None of them are gardening.</p>
+        </article>
+
+        <div class="ba-arrow" aria-hidden="true">
+          <span class="ba-circle">→</span>
+          <span class="ba-label">Ten<br>minutes<br>of setup</span>
+        </div>
+
+        <article class="panel panel-after">
+          <div class="panel-head">
+            <span class="panel-when">After · 9:04 pm</span>
+            <span class="panel-note">phone face-down</span>
+          </div>
+
+          <div class="scene" aria-hidden="true">
+            <div class="done done-a"><i></i>1042 — text sent, read</div>
+            <div class="done done-b"><i></i>2:04pm lead — booked Thu</div>
+            <div class="done done-c"><i></i>37 receipts — filed</div>
+            <div class="done done-d"><i></i>1043 — sent same day</div>
+
+            <div class="fig fig-calm">
+              <i class="c-bench"></i><i class="c-bench-back"></i>
+              <i class="c-leg-l"></i><i class="c-leg-r"></i>
+              <i class="c-arm-l"></i><i class="c-arm-r"></i>
+              <i class="c-torso"></i><i class="c-strap-l"></i><i class="c-strap-r"></i>
+              <i class="c-head"></i><i class="c-hair"></i><i class="c-hair2"></i>
+              <i class="c-hat-brim"></i><i class="c-hat-top"></i>
+              <i class="c-eye-l"></i><i class="c-eye-r"></i><i class="c-smile"></i>
+              <i class="c-blush-l"></i><i class="c-blush-r"></i>
+              <i class="c-pot"></i><i class="c-stem"></i><i class="c-leaf-a"></i><i class="c-leaf-b"></i>
+              <i class="c-phone"></i><i class="c-phone-lip"></i>
+            </div>
+          </div>
+
+          <p class="panel-foot">Still her decisions. Just not her evening.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Problem ──────────────────────────────────────────── -->
+  <section class="problem reveal">
+    <div class="wrap">
+      <h2 class="narrow">The work is done. The money isn't in.</h2>
+      <p class="section-sub">Every small service business runs the same invisible second shift. Not the work you're good at — the work that happens after.</p>
+      <div class="prob-grid">
+        <article class="card tilt-a">
+          <h3>A $10,000 invoice is 30 days late.</h3>
+          <p>Nobody has followed up, because everyone's busy delivering the next project. Payroll is in 14 days.</p>
+        </article>
+        <article class="card tilt-b">
+          <h3>A lead came in at 2pm.</h3>
+          <p>You were on site. You saw it at 7. They'd already hired whoever answered first — usually within the hour.</p>
+        </article>
+        <article class="card tilt-c">
+          <h3>It's the last Sunday of the month.</h3>
+          <p>You're cross-referencing bank feeds against receipts in a spreadsheet, so a stranger can categorize them correctly in April.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Positioning ──────────────────────────────────────── -->
+  <section class="positioning reveal">
+    <div class="wrap">
+      <h2>One teammate. Not five more tools.</h2>
+      <p>You don't need another dashboard to check. Coffer connects to the systems you already use, watches what's happening across your money and your leads, and does the follow-through — the part that keeps falling off. You stay in charge of every decision. Coffer does the typing.</p>
+    </div>
+  </section>
+
+  <!-- ─── What it does ─────────────────────────────────────── -->
+  <section class="modules" id="what-it-does">
+    <div class="wrap">
+
+      <div class="reveal modules-head">
+        <h2>Money in. Leads in. Paperwork gone.</h2>
+        <p class="section-sub">Two things Coffer chases for you. One it just quietly handles.</p>
+      </div>
+
+      <article class="reveal module">
+        <p class="pill pill-green">01 · Get paid</p>
+        <div class="module-body">
+          <h3>It gets invoices out clean, then chases the late ones for you.</h3>
+          <p>Most invoices aren't late because the client won't pay. They're late because the invoice went out eleven days after the work, to the wrong person, without a PO number or a payment link.</p>
+          <ul class="chips">
+            <li>Invoices go out the day work is delivered</li>
+            <li>Sent to the verified accounts-payable contact</li>
+            <li>PO numbers, terms, and a payment link every time</li>
+            <li>Follow-ups by text or email, in your voice</li>
+          </ul>
+          <p class="aside">You approve each message with one tap — or turn on auto-send for the clients you're not precious about.</p>
+        </div>
+      </article>
+
+      <article class="reveal module">
+        <p class="pill pill-sky">02 · Answer first</p>
+        <div class="module-body">
+          <h3>Replies to new leads in seconds — even when you're mid-hedge.</h3>
+          <p>A prospect texts, calls, or fills out your form at 2pm on a Tuesday. Coffer answers immediately, in your voice, from your own knowledge base — then books the consultation straight into your calendar. It won't quote a price, promise a timeline, or commit to scope. Those come to you.</p>
+          <div class="thread">
+            <p class="bubble them">Hi — do you do monthly garden maintenance in Ravenswood? <time>2:04pm</time></p>
+            <p class="bubble ink">We do — that's our main service area. Two quick questions and I'll get you on Ana's calendar. <time>2:04pm</time></p>
+            <p class="bubble booked">Booked: Thursday 9:00am, on-site walkthrough. <time>2:07pm</time></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="reveal module module-included">
+        <p class="pill pill-plain">03 · Included</p>
+        <div class="module-body">
+          <h3 class="h3-sm">Receipts and expenses, handled.</h3>
+          <p>Forward a receipt or let Coffer pull it from your bank feed. It reads the vendor, amount, and line items, maps it to the right tax category, and attaches the image for audit. That last Sunday of the month becomes about ten minutes.</p>
+          <p class="aside">Included in the plan. Coffer needs clean books to chase the right invoices anyway.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ─── How it works ─────────────────────────────────────── -->
+  <section class="how reveal" id="how-it-works">
+    <div class="wrap">
+      <h2>Live before your next invoice goes out.</h2>
+      <ol class="steps">
+        <li class="card">
+          <span class="step-num">1</span>
+          <h3>Connect</h3>
+          <p>QuickBooks or Xero, your email, calendar, and phone number. Read-only to start. About 10 minutes.</p>
+        </li>
+        <li class="card">
+          <span class="step-num">2</span>
+          <h3>Watch for a week</h3>
+          <p>Coffer learns your clients, terms, and how you write. It drafts; you approve or edit.</p>
+        </li>
+        <li class="card">
+          <span class="step-num">3</span>
+          <h3>Hand things over</h3>
+          <p>Turn on auto-send where you're comfortable. Keep approval where you're not. Change your mind anytime.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ─── Pricing ──────────────────────────────────────────── -->
+  <section class="pricing reveal" id="pricing">
+    <div class="wrap">
+      <h2>Costs less than the invoices you're not chasing.</h2>
+      <p class="section-sub">30-day money-back guarantee. No setup fee. No annual contract.</p>
+
+      <div class="plan-wrap">
+        <article class="plan">
+          <p class="plan-eyebrow">One plan</p>
+          <p class="plan-price"><span class="amount">$50</span><span class="per">/mo</span></p>
+          <p class="plan-note">Everything below, for the whole business. Not per seat.</p>
+          <ul class="plan-list">
+            <li>Invoicing + AR follow-up</li>
+            <li>Lead response, 24/7</li>
+            <li>Approval inbox</li>
+            <li>Calendar booking</li>
+            <li>Expense categorization</li>
+            <li>Unlimited invoices</li>
+            <li>Bookkeeper seats included</li>
+            <li>Email + chat support</li>
+          </ul>
+          <a class="btn btn-ink btn-block" href="#demo">Book a 15-minute demo</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ──────────────────────────────────────────────── -->
+  <section class="faq reveal">
+    <div class="wrap faq-grid">
+      <div class="faq-head">
+        <h2>Fair questions.</h2>
+        <p>The ones that actually decide it. Anything else, ask us on the demo.</p>
+      </div>
+
+      <div class="faq-list">
+        <details>
+          <summary>Will it text my clients something embarrassing?<span aria-hidden="true">+</span></summary>
+          <p>Not unless you approve it. Every message is a draft until you say otherwise, and you can mark any client "always ask me" permanently.</p>
+        </details>
+        <details>
+          <summary>Does this replace my bookkeeper or accountant?<span aria-hidden="true">+</span></summary>
+          <p>No. It replaces the data entry they charge you for and the chasing nobody does. Your bookkeeper gets a login and usually less to clean up at month end.</p>
+        </details>
+        <details>
+          <summary>What if the AI gets a lead's question wrong?<span aria-hidden="true">+</span></summary>
+          <p>It's built to defer, not improvise. On price, scope, or timeline it says it'll confirm with you and books the call. You see every conversation.</p>
+        </details>
+        <details>
+          <summary>Do I have to switch accounting software?<span aria-hidden="true">+</span></summary>
+          <p>No. Coffer sits on top of QuickBooks or Xero. If you're on something else, ask us — we're adding integrations.</p>
+        </details>
+        <details>
+          <summary>We're only four people. Is this overkill?<span aria-hidden="true">+</span></summary>
+          <p>Three to twenty is exactly who this is for. Bigger firms have someone whose job this is. You don't — that's the point.</p>
+        </details>
+        <details>
+          <summary>Can I turn parts off?<span aria-hidden="true">+</span></summary>
+          <p>Yes. Run just the invoicing side, just the lead side, or all of it. Most people start with one.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Final CTA ────────────────────────────────────────── -->
+  <section class="final reveal" id="demo">
+    <div class="wrap">
+      <h2>Get your evenings back. Get your money faster.</h2>
+      <p>Fifteen minutes, a real person, your actual books on screen. We'll show you what Coffer would have caught last month.</p>
+      <a class="btn btn-ink btn-lg btn-onsolid" href="#demo">Book a 15-minute demo</a>
+      <p class="final-alt">Or <a href="#demo">watch the 3-minute walkthrough →</a> if you'd rather not talk to anyone yet. We get it.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="brand">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span class="brand-name">Coffer</span>
+    </div>
+    <nav aria-label="Product">
+      <h2>Product</h2>
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#top">Integrations</a>
+      <a href="#what-it-does">What it does</a>
+    </nav>
+    <nav aria-label="Use cases">
+      <h2>Use cases</h2>
+      <a href="#top">Landscaping</a>
+      <a href="#top">Agencies</a>
+      <a href="#top">Specialty trades</a>
+      <a href="#top">IT &amp; MSPs</a>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <a href="#top">About</a>
+      <a href="#top">Blog</a>
+      <a href="#demo">Contact</a>
+      <a href="#top">Help center</a>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p>© 2026 Coffer. Coffer is not a bank, lender, or accounting firm and does not provide tax, legal, or financial advice. Coffer connects to financial accounts on a read-only basis and does not move funds.</p>
+    <p class="legal-links"><a href="#top">Privacy</a> · <a href="#top">Terms</a> · <a href="#top">DPA</a> · <a href="#top">Do not sell my info</a></p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
