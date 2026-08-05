@@ -558,22 +558,14 @@ h1 {
 /* ─── Footer ─────────────────────────────────────────────── */
 .footer { background: var(--paper); padding: 48px 0 40px; }
 .footer-grid {
-  display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 32px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; flex-wrap: wrap;
 }
 .footer .brand-dot { width: 22px; height: 22px; }
 .footer .brand-name { font-size: 20px; }
-.footer nav { display: flex; flex-direction: column; gap: 9px; }
-.footer nav h2 {
-  font: 700 14px/1 var(--text); letter-spacing: 0; color: var(--ink);
-}
-.footer nav a { font: 400 14px/1 var(--text); color: var(--body); }
-.footer nav a:hover { color: var(--green-deep); }
-.legal {
-  margin-top: 36px;
-  display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap;
-  font: 400 12px/1.7 var(--text); color: var(--muted);
-}
-.legal p { max-width: 60em; }
+.footer-copyright,
+.legal-links { font: 400 12px/1.7 var(--text); color: var(--muted); }
+.legal-links { display: flex; gap: 16px; flex-wrap: wrap; }
 .legal-links a:hover { color: var(--ink); }
 
 /* ─── Responsive ─────────────────────────────────────────── */
@@ -599,7 +591,6 @@ h1 {
   .faq-grid { grid-template-columns: 1fr; }
   .faq-head p { max-width: none; }
 
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
 }
 
 @media (max-width: 760px) {
@@ -668,6 +659,6 @@ h1 {
 
   .faq-list summary { font-size: 16px; }
 
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-  .legal { flex-direction: column; gap: 12px; }
+  .footer-grid { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .legal-links { gap: 12px 16px; }
 }

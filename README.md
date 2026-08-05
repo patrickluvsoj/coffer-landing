@@ -1,8 +1,10 @@
-# Coffer — landing page
+# Dunn — landing page
 
-Static marketing page for Coffer, the AI back office for small service businesses.
+Static marketing page for Dunn, the AI back office for small service businesses.
 No build step: plain HTML, one stylesheet, one small script. Deployed to GitHub Pages
 from `main`.
+
+**Live:** https://trydunn.co/
 
 ## Local preview
 

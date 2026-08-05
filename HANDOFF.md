@@ -1,21 +1,21 @@
-# HANDOFF — Coffer landing page
+# HANDOFF — Dunn landing page
 
 Status as of **2026-08-04**. Written to be read cold, with no conversation context.
 
 ## What this is
 
-A single static marketing page for "Coffer" (placeholder product name — an AI back
+A single static marketing page for "Dunn" (placeholder product name — an AI back
 office for service businesses of 3–20 people). No framework, no build step, no
 dependencies: `index.html` + `styles.css` + `main.js` + `favicon.svg`.
 
-**Live:** https://patrickluvsoj.github.io/coffer-landing/
+**Live:** https://trydunn.co/
 **Repo:** https://github.com/patrickluvsoj/coffer-landing (public, `main`)
 
 ## Sources of truth
 
 | Thing | Where |
 | --- | --- |
-| Visual design | Claude Design project `810c15b7-d9f2-43d4-84d4-a9bede2adadc`, file `Coffer Landing.dc.html` |
+| Visual design | Claude Design project `810c15b7-d9f2-43d4-84d4-a9bede2adadc`, file `Coffer Landing.dc.html` (historical source name) |
 | Which design direction | **`2a`** — "Ledger, but friendly" (Turn 2). *Not* 1a/1b/1c, which are earlier explorations in the same file. |
 | Copy | `coffer-landing-page-copy.md` (was at a local-agent-mode sessions path; not in this repo) |
 | Local reference copy of the design doc | `design-src/` — gitignored, may not exist in a fresh clone |
@@ -56,7 +56,7 @@ Two additions were made to keep the remaining pillars cohesive, and are not in t
 original copy doc:
 
 - Section header above the modules: **"Money in. Leads in. Paperwork gone."** /
-  "Two things Coffer chases for you. One it just quietly handles."
+  "Two things Dunn chases for you. One it just quietly handles."
 - The FAQ's left column now carries a supporting line ("The ones that actually decide
   it…") because section 10's security box used to live there.
 
@@ -74,8 +74,7 @@ original copy doc:
   the page, and it was removed by request. The draft-first promise survives in the hero
   subhead, the approval-inbox product shot, and the first FAQ — but it is no longer made
   explicitly. Worth flagging to whoever owns conversion.
-- Legal/footer says "© 2026 Coffer" and the disclaimer is boilerplate from the copy doc;
-  it has not been through legal review.
+- The footer is intentionally reduced to the Dunn logo, © 2026 copyright, and legal links.
 
 ## Implementation notes worth not re-deriving
 
