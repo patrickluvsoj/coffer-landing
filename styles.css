@@ -564,9 +564,8 @@ h1 {
 .footer .brand-dot { width: 22px; height: 22px; }
 .footer .brand-name { font-size: 20px; }
 .footer-copyright,
-.legal-links { font: 400 12px/1.7 var(--text); color: var(--muted); }
+.legal-links { font: 400 12px/1.7 var(--text); color: var(--body); }
 .legal-links { display: flex; gap: 16px; flex-wrap: wrap; }
-.legal-links a:hover { color: var(--ink); }
 
 /* ─── Responsive ─────────────────────────────────────────── */
 @media (max-width: 1080px) {
